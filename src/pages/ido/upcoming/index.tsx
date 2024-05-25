@@ -7,6 +7,7 @@ import moment from "moment";
 import {
     rendererCountDown,
 } from "../utilsIDO";
+import { Link } from 'react-router5';
 
 const Upcoming = () => {
     const [state, actions]: any = useHookIDO();
@@ -207,15 +208,17 @@ const Upcoming = () => {
                                     </div>
                                 </div>
                                 <div className="button-view">
-                                    <button
-                                        className="btn btn-view"
-                                        type="button"
-                                        onClick={() =>
-                                            window.location.href = "/details"
-                                        }
-                                    >
-                                        View Pool
-                                    </button>
+                                    <Link routeName="details">
+                                        <button
+                                            className="btn btn-view"
+                                            type="button"
+                                            // onClick={() =>
+                                            //     window.location.href = "/details"
+                                            // }
+                                        >
+                                            View Pool
+                                        </button>
+                                    </Link>
                                 </div>
                                 {item?.isFullResearch === true ? (
                                     <>

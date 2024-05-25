@@ -6,6 +6,7 @@ import Main from './components/main/Main';
 import IdoHome from './pages/ido';
 import DetailsIdo from './pages/ido/details';
 import WebApp from '@twa-dev/sdk';
+import "./App.css"
 
 export default function App() {
   const { route } = useRoute();
