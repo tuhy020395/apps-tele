@@ -6,8 +6,7 @@ import App from "./App";
 
 const routes = [
   { name: "home", path: "/" },
-  { name: "settings", path: "/settings" },
-  { name: "about", path: "/about" }
+  { name: "details", path: "/details" },
 ];
 
 const router = createRouter(routes);

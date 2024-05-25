@@ -1,0 +1,12 @@
+.container {
+    width: 380px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.main-header {
+    background: #ffd9d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
