@@ -5,10 +5,16 @@ import { TonConnectUIProvider, useTonConnectUI } from '@tonconnect/ui-react';
 import Main from './components/main/Main';
 import IdoHome from './pages/ido';
 import DetailsIdo from './pages/ido/details';
+import WebApp from '@twa-dev/sdk';
 
 export default function App() {
   const { route } = useRoute();
   const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    WebApp.ready();
+    WebApp.isClosingConfirmationEnabled = true
+    }, []);
 
   useEffect(() => {
         setLoading(true)
